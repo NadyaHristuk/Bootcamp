@@ -1,0 +1,346 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 50px;
+}
+
+.triger {
+    width: 200px;
+    height: 200px;
+    background-color: #ddd;
+    border: 20px solid red;
+    margin-bottom: 30px;
+    /*width: 200px;*/
+    /*height: 200px;*/
+    /*border: 20px solid #999;*/
+    /*background-color: #ddd;*/
+    /*margin-bottom: 30px;*/
+}
+
+.box {
+    display: inline-block;
+    background-color: fuchsia;
+    width: 160px;
+    height: 160px;
+    /*display: inline-block;*/
+    /*background-color: pink;*/
+    /*width: 160px;*/
+    /*height: 160px;*/
+    transition: background-color, transform 300ms cubic-bezier(0, 1.33, 0.38,-0.14) 1s;
+}
+
+.triger:hover .box {
+    /*transition: background-color 1s ease-in-out;*/
+    background-color: blue;
+    transform: translate(200px, 150px) rotate(20deg);
+}
+
+.triger:hover .box {
+    /*transform: translate(200px, 150px) rotate(20deg);*/
+}
+
+.triger2 {
+    width: 200px;
+    height: 200px;
+    border: 20px solid #999;
+    background-color: #ddd;
+}
+
+.box2 {
+    display: inline-block;
+    background-color: pink;
+    width: 160px;
+    height: 160px;
+    /*transition: transform 300ms ease-in-out;*/
+    /*animation: dobryi-den 2s ease-in-out infinite;*/
+}
+
+@keyframes dobryi-den {
+    0% {
+        height: 160px;
+        background-color: pink;
+    }
+
+    50% {
+        height: 360px;
+        background-color: orange;
+    }
+
+    100% {
+        height: 160px;
+        background-color: pink;
+    }
+}
+
+/*@keyframes first {*/
+    /*0% {*/
+        /*height: 160px;*/
+        /*background-color: pink;*/
+    /*}*/
+    /*50% {*/
+        /*height: 360px;*/
+        /*background-color: orange;*/
+    /*}*/
+    /*100% {*/
+        /*height: 160px;*/
+        /*background-color: pink;*/
+    /*}*/
+/*}*/
+
+@keyframes pupok {
+    0% {
+        transform: scale(0.5, 0.5);
+        background: red;
+ }
+    30% {
+        background: yellow;
+        transform: scale(0.75, 0.75);
+    }
+
+    60% {
+        background: green;
+        transform: scale(1.1, 1.1);
+    }
+    100% {
+        transform: scale(0.5, 0.5);
+        background: red;
+    }
+}
+
+
+.circle {
+    background: green;
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    /*animation: pupok 2s ease-out infinite;*/
+}
+
+/*@keyframes pulsing {*/
+    /*0% {*/
+        /*transform: scale(0.5, 0.5)*/
+    /*}*/
+    /*50% {*/
+        /*transform: scale(1.0, 1.0);*/
+    /*}*/
+    /*100% {*/
+        /*transform: scale(0.5, 0.5);*/
+    /*}*/
+/*}*/
+
+.menu-container {
+    margin-top: 50px;
+    height: 500px;
+}
+
+nav {
+    padding: 50px;
+    text-align: center;
+}
+nav > ul {
+    list-style: none;
+    display: flex;
+    background: #ddd;
+    border-radius: 5px;
+}
+nav > ul > li {
+    flex-grow: 1;
+    height: 65px;
+    line-height: 65px;
+    position: relative;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+}
+nav > ul > li:hover {
+    background: #d5d5d5;
+    border-radius: 15px;
+}
+
+ul.drop-menu {
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    width: 100%;
+    padding: 0;
+}
+
+ul.drop-menu {
+    display: none;
+}
+
+li:hover > ul.drop-menu {
+    display: block;
+}
+
+ul.drop-menu li {
+    background: #666;
+    color: rgba(255, 255, 255, 0.7);
+}
+ul.drop-menu li:hover {
+    background: #606060;
+}
+ul.drop-menu li:last-child {
+    border-radius: 0px 0px 5px 5px;
+}
+
+/*MENU 1*/
+
+li:hover > ul.menu-first {
+    animation: menu1 1500ms ease-in-out;
+}
+
+/*li:hover > ul.menu-first li:nth-child(1) {*/
+    /*animation: menu1 300ms ease-in-out;*/
+/*}*/
+/*li:hover > ul.menu-first li:nth-child(2) {*/
+    /*animation: menu1 600ms ease-in-out;*/
+/*}*/
+
+/*li:hover > ul.menu-first li:nth-child(3) {*/
+    /*animation: menu1 900ms ease-in-out;*/
+/*}*/
+
+/*li:hover > ul.menu-first li:nth-child(4) {*/
+    /*animation: menu1 1200ms ease-in-out;*/
+/*}*/
+
+/*li:hover > ul.menu-first li:nth-child(5) {*/
+    /*animation: menu1 1500ms ease-in-out;*/
+/*}*/
+
+/*li:hover > ul.menu-first li:nth-child(6) {*/
+    /*animation: menu1 1800ms ease-in-out;*/
+/*}*/
+
+
+
+@keyframes menu1 {
+    0% {
+        opacity: 0;
+        transform: rotateY(90deg) translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: rotateY(0deg) translateY(0px);
+    }
+}
+
+
+/*MENU 2*/
+
+li:hover > ul.menu-second li:nth-child(1) {
+    animation-name: menu2;
+    animation-duration: 150ms;
+    animation-timing-function: ease-in-out;
+}
+li:hover > ul.menu-second li:nth-child(2) {
+    animation-name: menu2;
+    animation-duration: 300ms;
+    animation-timing-function: ease-in-out;
+}
+
+li:hover > ul.menu-second li:nth-child(3) {
+    animation-name: menu2;
+    animation-duration: 450ms;
+    animation-timing-function: ease-in-out;
+}
+
+li:hover > ul.menu-second li:nth-child(4) {
+    animation-name: menu2;
+    animation-duration: 600ms;
+    animation-timing-function: ease-in-out;
+}
+
+li:hover > ul.menu-second li:nth-child(5) {
+    animation-name: menu2;
+    animation-duration: 750ms;
+    animation-timing-function: ease-in-out;
+}
+
+li:hover > ul.menu-second li:nth-child(6) {
+    animation-name: menu2;
+    animation-duration: 900ms;
+    animation-timing-function: ease-in-out;
+}
+
+
+
+@keyframes menu2 {
+    0% {
+        opacity: 0;
+        transform: rotateX(-90deg)
+    }
+
+    60% {
+        transform: rotateX(50deg)
+    }
+
+    100% {
+        opacity: 1;
+        transform: rotateX(0deg)
+    }
+}
+
+/*MENU 2*/
+
+li:hover > ul.menu-third li:nth-child(1) {
+    animation-name: menu3;
+    animation-duration: 200ms;
+    animation-timing-function: ease-in-out;
+}
+li:hover > ul.menu-third li:nth-child(2) {
+    animation-name: menu3;
+    animation-duration: 400ms;
+    animation-timing-function: ease-in-out;
+}
+
+li:hover > ul.menu-third li:nth-child(3) {
+    animation-name: menu3;
+    animation-duration: 600ms;
+    animation-timing-function: ease-in-out;
+}
+
+li:hover > ul.menu-third li:nth-child(4) {
+    animation-name: menu3;
+    animation-duration: 800ms;
+    animation-timing-function: ease-in-out;
+}
+
+li:hover > ul.menu-third li:nth-child(5) {
+    animation-name: menu3;
+    animation-duration: 1000ms;
+    animation-timing-function: ease-in-out;
+}
+
+li:hover > ul.menu-third li:nth-child(6) {
+    animation-name: menu3;
+    animation-duration: 1200ms;
+    animation-timing-function: ease-in-out;
+}
+
+
+
+@keyframes menu3 {
+    0% {
+        opacity: 0;
+        transform: scale(0.3) translateY(-60px)
+    }
+
+    80% {
+        transform: scale(1.2) translateY(10px)
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1) translateY(0px);
+    }
+}

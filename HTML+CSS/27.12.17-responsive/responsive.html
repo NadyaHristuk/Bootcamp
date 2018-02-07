@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Responsive</title>
+</head>
+<body>
+<div class="container">
+    <aside></aside>
+    <div class="content"></div>
+    <aside></aside>
+</div>
+
+<div class="img-box">
+    <img src="img/cat.jpg" alt="cat">
+</div>
+
+<div class="picture-box">
+    <picture>
+        <source media="(min-width: 768px)" srcset="img/cat31.jpg 768w">
+        <source media="(min-width: 480px)" srcset="img/cat2.jpg 480w">
+        <img src=img/cat.jpg alt="cat">
+    </picture>
+</div>
+
+<!--mobile-first-->
+
+<div class="mobile">
+    <header>Header</header>
+    <div class="content-mob">
+        <div class="tablet">Tablet-block</div>
+        <ul>
+            <li class="list-item1">list-item1</li>
+            <li class="list-item2">list-item2</li>
+            <li class="list-item3">list-item3</li>
+            <li class="list-item4">list-item4</li>
+            <li class="list-item5">list-item5</li>
+        </ul>
+    </div>
+    <footer>Footer</footer>
+</div>
+</body>
+</html>

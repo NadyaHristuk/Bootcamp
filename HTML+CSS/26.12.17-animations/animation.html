@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Animation</title>
+    <link rel="stylesheet" href="css/animation.css">
+</head>
+<body>
+<section class="section">
+    <h2>Способы анимации в CSS</h2>
+    <h3>transition</h3>
+    <p>Cвойство transition это краткая запись четырех свойств:</p>
+    <img src="img/transition.jpg" alt="transition">
+    <p><code>property</code> - указывает список свойств, которые будут анимироваться; свойства, которые здесь не указаны, будут изменяться обычным образом. Можно анимировать все свойства для конкретного элемента, указав значение all. Если вы не указали ни одного свойства, то по умолчанию используется значение all.</p>
+    <p><code>duration</code> - задаёт значение продолжительности анимации, время можно указывать в секундах или миллисекундах.</p>
+    <p><code>timing-function</code> - временная функция, указывает точки ускорения и замедления за определенный период времени для контроля изменения скорости анимации. Проще говоря, с помощью этого свойства можно указать поведение для анимации.</p>
+    <p><code>delay</code> - задаёт задержку времени до начала анимации, можно указывать в секундах или миллисекундах..</p>
+    <img src="img/transition-ex.jpg" alt="full">
+    <p>Лучшие свойства для анимации</p>
+    <ul>
+        <li>scale</li>
+        <li>rotation</li>
+        <li>opacity</li>
+        <li>translate</li>
+    </ul>
+    <p>Методы запуска анимации:</p>
+    <p><code>hover, focus, active</code></p>
+    <p><code>Добавить class средствами js</code></p>
+    <h3>animation</h3>
+    <p>CSS animations позволяют делать более сложные анимации, нежели CSS transitions. Весь секрет в @keyframes. Правило @keyframes позволяет создавать анимацию с помощью набора ключевых кадров, то есть описывает состояние объекта в определенный момент времени</p>
+    <p>Есть 8 свойств, которые позволяют контролировать CSS animations:</p>
+    <ul>
+        <li><code>animation-name</code> — здесь указвается имя анимации, которое связывает правило @keyframes с селектором.</li>
+        <li><code>animation-iteration-count</code> — задаёт количество повторов анимации, значение по умолчанию 1. Значение infinite означает, что анимация будет проигрываться бесконечно.</li>
+        <li><code>animation-direction</code> — задаёт направление анимации.</li>
+        <li><code>animation-play-state</code> — данное свойство управляет остановкой и прогрыванием анимации. Есть два значения, running (анимация проигрывается, по умолчанию) и paused (останавливает анимацию).</li>
+        <li><code>animation-fill-mode</code> — устанавливает, какие CSS-свойства будут приминены к объекту до или после анимации.</li>
+        <li><code>animation-duration</code> - продолжительность анимации</li>
+        <li><code>animation-timing-function</code> - функция распределения скорости по времени</li>
+        <li><code>animation-delay</code> - задержка анимации</li>
+    </ul>
+    <img src="img/animationsort.jpg" alt="animation">
+    <p>Синтаксис @keyframes</p>
+    <img src="img/keyframes.jpg" alt="keyframes">
+    <img src="img/keyframes-full.jpg" alt="keyframes-full">
+</section>
+</body>
+</html>

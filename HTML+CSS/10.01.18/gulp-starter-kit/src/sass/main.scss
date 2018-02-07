@@ -1,0 +1,69 @@
+/*
+   Import partials below
+*/
+//@import 'reset.scss';
+//$main-color: #888;
+//$width: 100%;
+//
+//.menu {
+//    color: $main-color;
+//    width: $width - 20%;
+//}
+
+.menu {
+    color: #888;
+    width: 80%;
+    .menu__item {
+        background-color: #fff;
+        .menu__link {
+            color: #000;
+        }
+    }
+}
+
+//.menu {
+//    color: #888;
+//    width: 80%;
+//    &__item {
+//        background-color: #fff;
+//    }
+//    &__link {
+//        color: #000;
+//        &:hover {
+//            color: #ff5722;
+//        }
+//    }
+//}
+
+
+//%main-set {
+//    color: #888;
+//    width: 80%;
+//}
+//
+//.menu {
+//    @extend %main-set;
+//}
+
+//@for $i from 1 through 3 {
+//    .item-#{$i} { width: 2em * $i; }
+//}
+
+//@each $animal in puma, sea-slug, egret, salamander {
+//    .#{$animal}-icon {
+//        background-image: url('/images/#{$animal}.png');
+//    }
+//}
+
+
+
+//@function rem($pxsize) {
+//    @return ($pxsize/16)+rem;
+//}
+
+
+//.box1 {
+//    width: 100px;
+//    height: 100px;
+//    background-color: #000;
+//}

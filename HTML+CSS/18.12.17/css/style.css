@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.color-wrapper {
+    background-color: #000;
+    padding: 50px 20px;
+}
+
+
+.box {
+    width: 100px;
+    height: 100px;
+    /*margin-top: 20px;*/
+    float: left;
+}
+/*
+from 0 to 255
+*/
+.rgb {
+    background-color: rgb(66, 134, 244);
+    /*float: left;*/
+}
+/*
+from 0 to f
+*/
+.hex {
+    background-color: #cc0033;
+    /*float: left;*/
+}
+/*0-360 0-100% насиченість 0-100% світлота */
+.hsl {
+    background-color: hsl(109, 71%, 35%);
+    /*float: left;*/
+}
+
+.word {
+    background-color: tomato;
+    float: right;
+}
+/* a - alpha chanel from 0 to 1 */
+.rgba {
+    background-color: rgba(38,29,29,0.9);
+    float: right;
+}
+
+/*hover*/
+
+.hover-box {
+    background-color: #0b115b;
+    transition: all, 0.5s;
+}
+
+.hover-box:hover {
+    background-color: #545ed3;
+    border-radius: 50%;
+}
+
+
+/*focus*/
+
+.focus-area {
+    border: 2px solid #000;
+    transition: all, 1s;
+}
+
+.focus-area:focus {
+    width: 200px;
+    border: 5px solid #000;
+    outline: none;
+}
+/* child*/
+.child {
+    list-style: none;
+    margin: auto;
+    width: 100px;
+}
+
+.child-item {
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border: 2px solid #000;
+    margin-bottom: 10px;
+    border-radius: 15px;
+}
+
+.child-item:first-child {
+    font-size: 20px;
+}
+
+.child-item:last-child {
+    margin-bottom: 0;
+    font-size: 10px;
+}
+/*an + b*/
+
+/*n = 0, 1, 2, 3, 4, 5.....*/
+    .child-item:nth-child(3n+1) {
+    background-color: tomato;
+}
+
+.child-item:nth-child(2n+2) {
+    background-color: lightgreen;
+}
+
+/*.child-item:nth-last-child(-n+3) {*/
+    /*background-color: #000;*/
+/*}*/
+
+
+/*before and after*/
+
+.tool {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.tooltip {
+    color: red;
+    cursor: help;
+}
+
+    .tooltip::before {
+    content: "User help";
+    display: block;
+    position: absolute;
+    left: 25%;
+    top: 0;
+    width: 100px;
+    height: 30px;
+    background-color: rgba(0 ,0 ,0, 0.5);
+    text-align: center;
+    line-height: 30px;
+    color: #fff;
+    opacity: 0;
+    transition: all, 1s;
+    z-index: -100;
+}
+
+.tooltip:hover::before {
+    top: -30px;
+    left: 13%;
+    opacity: 1;
+}
+
+
+/*float*/
+
+.float-wrapper {
+    background-color: yellowgreen;
+    /*padding: 50px;*/
+}
+ .pict {
+     width: 150px;
+     height: 150px;
+     float: left;
+     margin-right: 20px;
+ }
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+.list-item {
+    margin-left: 20px;
+    list-style: none;
+}
+
+.list-item::before {
+    content: "\2192";
+}

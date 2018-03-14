@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+
+}
+
+
+.road {
+  position: relative;
+}
+.road img {
+  position: absolute;
+  transition: All 2s;
+}

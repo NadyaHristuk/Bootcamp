@@ -1,0 +1,63 @@
+<div class="c-contacts-container">
+    <div class="c-contacts">
+        <h2 class="sub-title sub-title__break">
+            <span class="sub-title__back">[&nbsp;Наши</span>
+            <span class="sub-title__back">контакты&nbsp;]</span>
+        </h2>
+        <div class="c-contacts-block">
+            <div class="c-address__item">
+                <h5 class="text-bold">[ Адрес ]</h5>
+                <p class="text c-address__text">
+                    <span class="c-address__text-item">12300 Украина, Киев,</span>
+                    <span class="c-address__text-item">5 минут от м. Печерская,</span>
+                    <span class="c-address__text-item">ул. Евгения Коновальца 36Д (бывш. Щорса) 8й этаж</span>
+                </p>
+            </div>
+            <div class="c-contacts__item">
+                <h5 class="text-bold">[ GoIt ]</h5>
+                <p class="text c-contacts__text">
+                    <span class="c-contacts__text-item">info@goit.ua</span>
+                    <span class="c-contacts__text-item">093 343 21 27;</span>
+                    <span class="c-contacts__text-item">067 326 95 92;</span>
+                    <span class="c-contacts__text-item">050 366 17 77</span>
+                </p>
+            </div>
+        </div>
+        <div class="c-find__link">
+            <a href="" class="c-find__link-item">Как нас найти</a>
+        </div>
+    </div>
+
+    <div id="map"></div>
+</div>
+
+<script>
+    var map;
+
+    function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 15,
+            center: new google.maps.LatLng(50.42565968, 30.53396165),
+            mapTypeId: 'roadmap'
+        });
+
+        var point = {
+            path: 'M22,0C9.8,0,0,9.8,0,22c0,12.1,22,37,22,37s22-24.9,22-37 C44,9.8,34.2,0,22,0z M22,30c-5,0-9-4-9-9s4-9,9-9s9,4,9,9S27,30,22,30z',
+            fillColor: '#FF0000',
+            fillOpacity: 1,
+            scale: 1,
+            strokeColor: '#FF0000',
+            strokeWeight: 0
+        };
+
+        var marker = new google.maps.Marker({
+            position: map.getCenter(),
+            icon: point,
+            map: map
+        });
+    }
+</script>
+
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8U5sLzydO0evEsrNosbsU5I8i008tq54&callback=initMap">
+</script>

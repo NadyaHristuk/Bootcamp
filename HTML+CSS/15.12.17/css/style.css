@@ -1,91 +1,130 @@
-/*@import url(font.css);*/
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*{
+  margin: 0;
+  padding: 0;
 }
-
-.container {
-    height: 600px;
-    /*background-color: darkblue;*/
-    /*text-align: center;*/
-    padding: 20px;
+body{
+  width: 1200px;
+  display: block;
+;
 
 }
-
-/*.box {*/
-    /*width: 100px;*/
-    /*height: 100px;*/
-    /*background-color: yellow;*/
-    /*padding: 0 20px;*/
-    /*border: 10px solid red;*/
-    /*margin: 0 auto 50px;*/
-    /*!*margin: 0 50px 40px 30px;*!*/
-    /*!*margin: 40px 50px;*!*/
-/*}*/
-
-/*.box:first-child {*/
-    /*margin-top: 0;*/
-/*}*/
-
-/*.box:last-child {*/
-    /*margin-bottom: 0;*/
-/*}*/
-
-/*.box:hover {*/
-    /*background-color: red;*/
-/*}*/
-
-/*.box1 {*/
-    /*width: 100px;*/
-    /*height: 100px;*/
-    /*background-color: yellow;*/
-    /*padding: 0 20px;*/
-    /*border: 10px solid red;*/
-    /*margin: 0 auto 50px;*/
-    /*!*margin: 0 50px 40px 30px;*!*/
-    /*!*margin: 40px 50px;*!*/
-/*}*/
-
-/*.box1:hover {*/
-    /*background-color: #000;*/
-/*}*/
-
-.nav {
-    list-style: none;
+header{
+  width: 960px;
+  height: 250px;
+  background: url(../img/Warstwa2@1X.png)no-repeat;
+  background-size: cover;
+  margin: auto;
+}
+.container{
+  width: 980px;
+  margin: auto;
+}
+ul{
+  display: inline-block;
+  text-align: center;
+  font-size: 20px;
+}
+li{
+  color: rgba(10, 10, 10, 255);
+  text-align: center;
+  list-style-type: none;
+  display: inline;
+  margin: 20px;
 }
 
-.nav-item {
-    /*display: inline-block;*/
-    width: 100px;
-    border: 2px solid black;
-    margin: 0 auto 20px;
-    /*margin-bottom: 20px;*/
-
-
+nav{
+  display: block;
+  width: 980px;
+  text-align:center;
+}
+.li1{
+  font-family: Calibri-Bold, RBNo2-Light, MyriadPro-Regular;
 }
 
-.nav-item:last-child {
-    margin-bottom: 0;
+.title{
+    margin: auto;
+  width: 50%;
+  text-align: center;
+  font-family: TrajanPro-Regular, MyriadPro-Regular;
 }
-
-.nav-link {
-    font-family: "Open Sans", sans-serif;
-    height: 50px;
-    display: block;
-    background-color: rgba(34,139,30,0.4);
-    color: black;
-    text-decoration: none;
-    text-align: center;
-    font-size: 15px;
-    /*font-weight: bold;*/
-    /*font-style: italic;*/
-    line-height: 50px;
+.maintitle{
+  font-size: 40pt;
+  border-bottom: 1px solid black;
+  letter-spacing: 8px;
+}
+.subtitle{
+  font-family: Calibri-Bold, TrajanPro-Regular, MyriadPro-Regular;
+  font-size: 25pt;
+  letter-spacing: 10px;
+  border-bottom: 1px solid black;
 
 }
+.caption{
+  font-family: Calibri-Bold, Calibri, MyriadPro-Regular;
+  text-align: center;
+}
+.blocks{
+  width: 980px;
+  display: block;
+  padding-top: 60px;
+}
+.block{
+  width: 30%;
+  height: 730px;
+  float: left;
+}
+.center{
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.imgp{
+  border-bottom: medium double black;
+}
+.ps{
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+}
+span.zag{
+  display: block;
+  margin-top: 50px;
+  font-family: Calibri-Bold, Calibri, MyriadPro-Regular;
+}
+p{
+  vertical-align: auto;
+  font-family: Calibri-Bold, Calibri, MyriadPro-Regular;
+}
+p.mini{
+  font-size: 12px;
+}
+span.braces {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1;
+}
+.end{
+  display: block;
+}
+.endtext{
+  width: 650px;
+  font-size: 14px;
+  float: left;
+}
+.articles{
+  float: right;
+  width: 280px;
+  display: inline-block;
+}
+footer{
+  width: 960px;
+  display: block;
+  margin: auto;
+}
+.design{
+  display: inline-block;
 
-.nav-link:hover {
-    background-color: yellow;
-    color: red;
+}
+.social{
+  display: inline-block;
+  float: right;
 }

@@ -1,0 +1,26 @@
+{
+  "name": "express-example-user",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "DB=testDb node app.js",
+    "start": "nodemon --inspect app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "chai": "^4.1.2",
+    "chai-http": "^4.0.0",
+    "express": "^4.16.3",
+    "mongodb": "^3.0.6",
+    "mongoose": "^5.0.14"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.3"
+  },
+  "description": ""
+}

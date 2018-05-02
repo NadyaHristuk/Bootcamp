@@ -1,0 +1,11 @@
+*{margin:0;
+padding: 0;}
+
+.out_block{width:500px;
+height: 400px;
+background-color: aqua;}
+
+.internal_block{
+  background-color: #FFCC00;
+  width:250px;
+height: 200px;}

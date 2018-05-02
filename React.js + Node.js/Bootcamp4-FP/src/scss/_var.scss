@@ -1,0 +1,246 @@
+// colors
+$white: #fff;
+$title: #000;
+$button: #ff6b08;
+$main-text: #6b6f7a;
+$dark-blue:#1b4371;
+$grey-second: #202020;
+$checkbox: #17ecff;
+$footer-text: #a2a2a2;
+$footer-link: #65666a;
+$background-word:rgba(0, 0, 0, .05);
+
+@function rem($pix) {
+    @return ($pix/16)+rem;
+}
+
+@font-face {
+    font-family: "AcromBold";
+    src: url("../fonts/Acrom W00 Bold.otf");
+}
+@font-face {
+    font-family: "AcromExtrabold";
+    src: url("../fonts/Acrom W00 ExtraBold.otf");
+}
+@font-face {
+    font-family: "HammersmithOne";
+    src: url("../fonts/Acrom W00 Medium.otf");
+}
+@font-face {
+    font-family: "Acrom";
+    src: url("../fonts/Acrom W00 Regular.otf");
+}
+@font-face {
+    font-family: "HammersmithOne";
+    src: url("../fonts/Light.otf");
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.title-main {
+    font-family: "AcromExtrabold" ,sans-serif;
+        font-size: rem(100);
+        text-transform: uppercase;
+        line-height: rem(100);
+        color: $title;
+}
+
+.sub-title {
+    font-family: "AcromExtrabold" ,sans-serif;
+    font-size: rem(48);
+    text-transform: uppercase;
+    line-height: rem(60);
+    color: $title;
+}
+
+.title-third {
+    font-family: "AcromExtrabold" ,sans-serif;
+    font-size: rem(24);
+    text-transform: uppercase;
+    line-height: rem(30);
+    color: $title;
+}
+
+.title-fourth {
+    font-family: "AcromExtrabold" ,sans-serif;
+    font-size: rem(18);
+    text-transform: uppercase;
+    line-height: rem(30);
+    color: $title;
+}
+
+.text-bold {
+    font-family: "AcromBold" ,sans-serif;
+    font-size: rem(16);
+    text-transform: uppercase;
+    line-height: rem(24);
+    color: $title;
+}
+
+.text {
+    font-family: "Acrom" ,sans-serif;
+    font-size: rem(16);
+    line-height: rem(24);
+    color: $main-text;
+}
+.text-small {
+    font-family: "Acrom" ,sans-serif;
+    font-size: rem(14);
+    line-height: rem(21);
+    color: $main-text;
+}
+
+/*Buttons *************/
+
+.button {
+    font-family: "Acrom ExtraBold" , sans-serif;
+    transition: all .25s ease-in-out;
+    padding: rem(21) rem(24);
+    font-size: rem(12);
+    text-transform: uppercase;
+    letter-spacing: rem(1);
+    background-color: $button;
+    color: $white;
+    display: inline-block;
+}
+
+.button:hover {
+    box-shadow: 0 8px 43px 0 rgba(255, 107, 8, 0.59);
+}
+
+.button-plus {
+    transition: all .25s ease-in-out;
+    background-color: $button;
+    width: rem(26);
+    height: rem(26);
+    display: block;
+    border: rem(2) solid $button;
+    color: $white;
+    position: relative;
+}
+
+.button-plus::before {
+    transition: all .25s ease-in-out;
+    content: '\f067';
+    display: block;
+    /*width: 100%;
+    height: 100%;
+    background-image: url("../images/icons/icon.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;*/
+    color: $white;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    font-size: rem(13);
+    line-height: rem(22);
+    text-align: center;
+}
+
+.button-plus:hover {
+    background-color: $white;
+    border: rem(2) solid $button;
+    color: $button;
+}
+
+.button-plus:hover::before {
+    color: $button;
+}
+
+.button-close {
+    transition: all .25s ease-in-out;
+    background-color: $button;
+    width: rem(26);
+    height: rem(26);
+    display: block;
+    border: rem(2) solid $button;
+    color: $white;
+    position: relative;
+}
+
+.button-close::before {
+    transition: all .25s ease-in-out;
+    content: '\f00d';
+    display: block;
+    color: $white;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    font-size: rem(13);
+    line-height: rem(22);
+    text-align: center;
+}
+
+.button-close:hover {
+    background-color: $white;
+    border: rem(2) solid $button;
+    color: $button;
+}
+
+.button-close:hover::before {
+    color: $button;
+}
+
+.button-back {
+    transition: all .25s ease-in-out;
+    background-color: $button;
+    width: rem(26);
+    height: rem(24);
+    display: block;
+    border: rem(2) solid $button;
+    color: $white;
+    position: relative;
+}
+
+.button-back::before {
+    transition: all .25s ease-in-out;
+    content: '\f053';
+    display: block;
+    color: $white;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    font-size: rem(13);
+    line-height: rem(22);
+    text-align: center;
+}
+
+.button-back:hover {
+    background-color: $white;
+    border: rem(2) solid $button;
+    color: $button;
+}
+
+.button-back:hover::before {
+    color: $button;
+}
+
+.button-more {
+    transition: all .25s ease-in-out;
+    font-family: "Acrom ExtraBold" , sans-serif;
+    padding: rem(19) rem(42);
+    font-size: rem(12);
+    text-transform: uppercase;
+    letter-spacing: rem(1);
+    background-color: $white;
+    border: 2px solid $button;
+    color: $button;
+    display: inline-block;
+}
+
+.button-more:hover {
+    background-color: $button;
+    color: $white;
+}
+
+.container {
+    width: 100%;
+}
+
+
+
+
+

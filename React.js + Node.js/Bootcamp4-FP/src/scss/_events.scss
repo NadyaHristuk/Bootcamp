@@ -1,0 +1,41 @@
+
+.a-events__title {
+    font-family: "AcromBold", sans-serif;
+    font-size: rem(16);
+    color: $title;
+    text-align: center;
+    margin-bottom: rem(50);
+}
+
+.text__span {
+    display: block;
+}
+
+.a-pic__slider {
+    margin: auto;
+}
+
+.a-events__pic {
+    margin: rem(20) 0;
+}
+
+.a-events__text {
+    font-family: "AcromBold", sans-serif;
+    font-size: rem(14);
+    color: $title;
+    text-align: center;
+}
+.a-pic__slider {
+    width: 75%;
+}
+
+@media (min-width: 768px) {
+    .a-slidebar-img {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .a-pic__slider {
+        width: 75%;
+    }
+}

@@ -1,0 +1,148 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: rem(20) 0 0;
+}
+
+.logo {
+    display: block;
+    cursor: pointer;
+}
+
+.nav {
+    padding-top: 10px;
+}
+
+.burger {
+    width: 17px;
+    height: 2px;
+    background-color: $title;
+    margin: 4px 0px 3px auto;
+}
+.burger--middle {
+    width: 10px;
+}
+.burger--bottom {
+    width: 23px;
+}
+.nav-list {
+    list-style: none;
+    display: none;
+    position: absolute;
+    top: rem(50);
+    right: 50%;
+    transform: translate(50%);
+}
+
+.nav-list--show {
+    display: block;
+    text-align: center;
+}
+.nav__link {
+    text-decoration: none;
+    @extend .text-small;
+    font-size: rem(12);
+}
+
+@media (min-width: 768px) {
+    .header {
+        justify-content: space-around;
+        padding: rem(40) rem(0);
+    }
+    .nav {
+        line-height: rem(34);
+        padding-top: 0;
+    }
+    .nav-list {
+        display: flex;
+        align-items:  flex-start;
+        position: static;
+        transform: translate(0);
+    }
+    .nav__item {
+        text-align: center;
+        font-size: rem(13);
+        padding: rem(0) rem(10);
+        position: relative;
+    }
+    .burger-menu {
+        display: none;
+    }
+
+    .nav__link {
+        font-size: rem(10);
+    }
+
+    .nav__link:hover {
+        font-family: "AcromBold" ,sans-serif;
+        font-size: rem(10);
+        line-height: rem(10);
+        color: $title;
+    }
+    .nav__link:hover:after {
+        display: block;
+        position: absolute;
+        font-weight: 700;
+        content: "";
+        width: rem(20);
+        height: rem(2);
+        background-color: #000000;
+        top: 40px;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+}
+
+@media (min-width: 960px) {
+    .nav__link {
+        font-size: rem(12);
+    }
+    .nav__link:hover {
+        font-size: rem(12);
+        line-height: rem(12);
+    }
+}
+
+@media (min-width: 1024px) {
+    .nav__link {
+        font-size: rem(14);
+    }
+    .header {
+        justify-content: space-around;
+    }
+    .nav {
+        margin-left: -2%;
+    }
+    .nav__link:hover {
+        font-size: rem(14);
+        line-height: rem(14);
+    }
+
+}
+
+@media (min-width: 1440px) {
+    .header {
+        justify-content: flex-start;
+    }
+    .nav {
+        margin-left: 18%;
+    }
+    .nav__link {
+        font-size: rem(16);
+    }
+    .nav__link:hover {
+        font-size: rem(16);
+        line-height: rem(16);
+    }
+    .nav__link:hover:after {
+        width: rem(20);
+        height: rem(2);
+    }
+}
+
+
+
+
+

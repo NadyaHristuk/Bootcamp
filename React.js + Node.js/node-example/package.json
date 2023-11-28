@@ -15,7 +15,7 @@
   "dependencies": {
     "chalk": "^2.3.2",
     "color-logger": "0.0.6",
-    "jsdom": "^11.7.0",
+    "jsdom": ">=16.5.0",
     "mongoose": "^5.0.13",
     "request": "^2.85.0",
     "winston": "^3.0.0-rc3"

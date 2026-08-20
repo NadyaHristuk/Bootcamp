@@ -16,7 +16,7 @@
     "chalk": "^2.3.2",
     "color-logger": "0.0.6",
     "jsdom": ">=16.5.0",
-    "mongoose": ">=6.13.9",
+    "mongoose": ">=6.13.10",
     "request": "^2.85.0",
     "winston": "^3.0.0-rc3"
   }
